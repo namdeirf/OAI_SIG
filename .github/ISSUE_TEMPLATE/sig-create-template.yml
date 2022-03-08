@@ -1,6 +1,6 @@
 name: "SIG Create Form"
-description: "Request form to create a SIG under the OAI"
-title: "[Create SIG]: "
+description: "Request form to create a SIG under the OAI. Please provide a brief description and fill out the details below and we'll get back to you ASAP."
+title: "[Request to Create SIG]: "
 labels: SIG, invitation-request
 assignees:
   - namdeirf
@@ -30,10 +30,10 @@ body:
     id: version
     attributes:
       label: Class
-      description: What is the class of SIG you want to create?
+      description: What is the class of SIG you want to create? Technical SIGs are narrow scope that addresses specific, known technical needs, limitations, features or enhancements. Industry SIGs are created to address a series of domain specific needs which may or may not require in changes to the spec.
       options:
-        - Technical (Narrow scope that addresses a specific technical need, feature or enhancement)
-        - Industry (Broad scope that addresses a series of issues that pertains to a specific industry domain)
+        - Technical SIG
+        - Industry SIG
     validations:
       required: true
   - type: dropdown
@@ -46,14 +46,15 @@ body:
         - Next
         - Some future release
   - type: dropdown
-    id: Community
+    id: Cadence
     attributes:
-      label: Where will your community gather
+      label:How often do you expect to need to meet
       multiple: true
       options:
-        - Slack
-        - Discord
-        - GitHub        
+        - Weekly
+        - Bi-monthly/Monthly
+        - Quarterly
+        - Ad hoc
   - type: checkboxes
     id: terms
     attributes:
