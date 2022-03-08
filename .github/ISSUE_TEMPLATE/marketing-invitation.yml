@@ -1,6 +1,6 @@
-name: "OAI Marketing Inviate Form"
+name: "OAI Marketing Invitate Form"
 description: "Request to join the OAI Marketing group."
-title: "[Inviation Request]: "
+title: "[Invitation Request]: "
 labels: invitation-request
 assignees:
   - kevinswiber
