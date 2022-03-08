@@ -48,8 +48,8 @@ body:
   - type: dropdown
     id: Cadence
     attributes:
-      label:How often do you expect to need to meet
-      multiple: true
+      label: How often do you intend to need to meet
+      multiple: false
       options:
         - Weekly
         - Bi-monthly/Monthly
