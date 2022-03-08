@@ -25,8 +25,7 @@ body:
       options:
         - 'Yes'
         - 'No'
-      validations:
-        required: true
+      required: true
   - type: checkboxes
     id: terms
     attributes:
