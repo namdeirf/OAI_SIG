@@ -1,5 +1,5 @@
-name: SIG Create Form
-description: Request to create a SIG
+name: "SIG Create Form"
+description: "Request to create a SIG"
 title: "[Create SIG]: "
 labels: "SIG", "invitation-request"
 assignees:
