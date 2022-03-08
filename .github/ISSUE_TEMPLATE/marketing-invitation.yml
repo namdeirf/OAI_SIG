@@ -20,12 +20,13 @@ body:
   - type: dropdown
     id: Membership
     attributes:
-      required: true
       label: Share with us if your organization is an OAI member. Membership is NOT a requirement for participation.
       multiple: false
       options:
         - 'Yes'
-        - 'No' 
+        - 'No'
+      validations:
+        required: true
   - type: checkboxes
     id: terms
     attributes:
