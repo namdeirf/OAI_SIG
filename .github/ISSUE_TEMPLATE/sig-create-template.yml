@@ -1,5 +1,5 @@
 name: "SIG Create Form"
-description: "Request to create a SIG"
+description: "Request form to create a SIG under the OAI"
 title: "[Create SIG]: "
 labels: SIG, invitation-request
 assignees:
@@ -8,50 +8,42 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
+        Thanks for taking the time to fill out the SIG creation form!
   - type: input
     id: contact
     attributes:
       label: Contact Details
       description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      placeholder: ex. email@example.com | _Note: this email will be displayed publicly_
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: scope
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Scope of SIG
+      description: What is the scope of the project you are working on
+      placeholder: Tell us what problem you want to address, expected outcome, and the ideal contributor profile (experience, skills, domain expertise, etc.)
+      value: "Scope of contribution"
     validations:
       required: true
   - type: dropdown
     id: version
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Class
+      description: What is the class of SIG you want to create?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Technical (Narrow scope that addresses a specific technical need, feature or enhancement)
+        - Industry (Broad scope that addresses a series of issues that pertains to a specific industry domain)
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: Versions
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: What versions are you looking to address
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
+        - 3.0
+        - Future versions
   - type: checkboxes
     id: terms
     attributes:
