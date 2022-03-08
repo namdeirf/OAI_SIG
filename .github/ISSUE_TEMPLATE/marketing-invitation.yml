@@ -1,0 +1,35 @@
+name: "OAI Marketing Inviate Form"
+description: "Request to join the OAI Marketing group."
+title: "[Inviation Request]: "
+labels: invitation-request
+assignees:
+  - kevinswiber
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out the SIG creation form!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: Share your email address so we may send a calendar invite.
+      placeholder: email@example.com [Note this email will be displayed publicly]
+    validations:
+      required: true
+  - type: dropdown
+    id: Membership
+    attributes:
+      label: Let us know if your org is an OAI member. Note: membership is not a requirement for participation.
+      multiple: false
+      options:
+        - Yes
+        - No        
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
