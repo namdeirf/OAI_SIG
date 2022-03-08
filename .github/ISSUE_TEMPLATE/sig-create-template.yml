@@ -1,7 +1,7 @@
-name: Bug Report
-description: File a bug report
-title: "[Bug]: "
-labels: ["bug", "triage"]
+name: SIG Create Form
+description: Request to create a SIG
+title: "[Create SIG]: "
+labels: "SIG", "invitation-request"
 assignees:
   - "namdeirf"
 body:
