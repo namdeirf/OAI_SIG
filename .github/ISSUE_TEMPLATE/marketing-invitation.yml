@@ -23,8 +23,8 @@ body:
       label: Let us know if your org is an OAI member. Note, membership is not a requirement for participation.
       multiple: false
       options:
-        - Yes
-        - No        
+        - 'Yes'
+        - 'No'        
   - type: checkboxes
     id: terms
     attributes:
