@@ -1,6 +1,6 @@
-name: "OAI Marketing Invitate Form"
+name: "OAI Marketing Invitation Request Form"
 description: "Request to join the OAI Marketing group."
-title: "[Invitation Request]: "
+title: "[Invitation Request]: Please add me to the OAI Marketing Group"
 labels: invitation-request
 assignees:
   - kevinswiber
@@ -20,11 +20,12 @@ body:
   - type: dropdown
     id: Membership
     attributes:
-      label: Let us know if your org is an OAI member. Note, membership is not a requirement for participation.
+      required: true
+      label: Share with us if your organization is an OAI member. Membership is NOT a requirement for participation.
       multiple: false
       options:
         - 'Yes'
-        - 'No'        
+        - 'No' 
   - type: checkboxes
     id: terms
     attributes:
