@@ -39,11 +39,21 @@ body:
   - type: dropdown
     id: Versions
     attributes:
-      label: What versions are you looking to address
+      label: What versions of the spec do you want your changes to be incorporated in?
       multiple: true
       options:
-        - 3.0
-        - Future versions
+        - Current
+        - Next
+        - Some future release
+  - type: dropdown
+    id: Community
+    attributes:
+      label: Where will your community gather
+      multiple: true
+      options:
+        - Slack
+        - Discord
+        - GitHub        
   - type: checkboxes
     id: terms
     attributes:
