@@ -20,9 +20,9 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: Scope of SIG
+      label: Describe your SIG
       description: A brief description, ideally a single paragraph that describes your SIG.
-      value: "Scope of contribution"
+      value: ""
     validations:
       required: true
   - type: textarea
@@ -30,7 +30,7 @@ body:
     attributes:
       label: SOW 
       description: A detailed statement of work (SOW) defining what your SIG will accomplish.
-      value: "Scope of contribution"
+      value: "What problem set are you looking to address."
     validations:
       required: true
   - type: dropdown
