@@ -29,7 +29,6 @@ body:
     attributes:
       label: SOW 
       description: A detailed statement of work (SOW) defining what your SIG will accomplish.
-      value: "What solution are you looking to provide"
     validations:
       required: true
   - type: dropdown
