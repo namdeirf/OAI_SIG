@@ -17,6 +17,13 @@ body:
     validations:
       required: false
   - type: textarea
+    id: Title
+    attributes:
+      label: What till be the title of your SIG
+      description: Each SIG needs a unique name starting with "SIG-"
+    validations:
+      required: true
+  - type: textarea
     id: description
     attributes:
       label: Describe your SIG
