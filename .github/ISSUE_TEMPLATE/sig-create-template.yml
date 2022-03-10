@@ -33,7 +33,7 @@ body:
   - type: dropdown
     id: version
     attributes:
-      label: Class
+      label: SIG Class
       description: What is the class of SIG you want to create? Technical SIGs are narrow scope that addresses specific, known technical needs, limitations, features or enhancements. Industry SIGs are created to address a series of domain specific needs which may or may not require in changes to the spec.
       options:
         - Technical SIG
