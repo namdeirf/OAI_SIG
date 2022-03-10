@@ -26,7 +26,7 @@ body:
   - type: textarea
     id: scope
     attributes:
-      label: SOW 
+      label: Statement of Work (SOW 
       description: A detailed statement of work (SOW) defining what your SIG will accomplish.
     validations:
       required: true
