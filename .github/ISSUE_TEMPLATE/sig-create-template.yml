@@ -44,7 +44,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: history
     attributes:
       label: History
       description: Is this an existing group that you want to move to the OAI, or are you forming this group for the first time.
