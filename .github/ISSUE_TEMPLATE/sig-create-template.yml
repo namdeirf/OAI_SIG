@@ -1,5 +1,5 @@
 name: "SIG Create Form"
-description: "Request form to create a SIG under the OAI. Please provide a brief description and fill out the details below and we'll get back to you ASAP."
+description: "Request form to create a SIG under the OAI. Please provide a brief title, description, and fill out the details below and we'll get back to you ASAP."
 title: "[Request to Create SIG]: "
 labels: SIG, invitation-request
 assignees:
@@ -18,11 +18,18 @@ body:
     validations:
       required: false
   - type: textarea
-    id: scope
+    id: description
     attributes:
       label: Scope of SIG
-      description: What is the scope of the project you are working on
-      placeholder: Tell us what problem you want to address, expected outcome, and the ideal contributor profile (experience, skills, domain expertise, etc.)
+      description: A brief description, ideally a single paragraph that describes your SIG.
+      value: "Scope of contribution"
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: SOW 
+      description: A detailed statement of work (SOW) defining what your SIG will accomplish.
       value: "Scope of contribution"
     validations:
       required: true
@@ -34,6 +41,16 @@ body:
       options:
         - Technical SIG
         - Industry SIG
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: History
+      description: Is this an existing group that you want to move to the OAI, or are you forming this group for the first time.
+      options:
+        - Pre-existing group we want to move to the OAI
+        - A new group we want to create under the OAI
     validations:
       required: true
   - type: dropdown
@@ -52,8 +69,11 @@ body:
       multiple: false
       options:
         - Weekly
-        - Bi-monthly/Monthly
+        - Every other week
+        - Monthly
+        - Every other month
         - Quarterly
+        - Annual
         - Ad hoc
   - type: checkboxes
     id: terms
