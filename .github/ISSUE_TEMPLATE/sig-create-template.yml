@@ -22,7 +22,6 @@ body:
     attributes:
       label: Describe your SIG
       description: A brief description, ideally a single paragraph that describes your SIG.
-      value: "What problem are you facing"
     validations:
       required: true
   - type: textarea
