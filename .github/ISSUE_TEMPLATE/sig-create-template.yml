@@ -22,7 +22,7 @@ body:
     attributes:
       label: Describe your SIG
       description: A brief description, ideally a single paragraph that describes your SIG.
-      value: ""
+      value: "What problem are you facing"
     validations:
       required: true
   - type: textarea
@@ -30,7 +30,7 @@ body:
     attributes:
       label: SOW 
       description: A detailed statement of work (SOW) defining what your SIG will accomplish.
-      value: "What problem set are you looking to address."
+      value: "What solution are you looking to provide"
     validations:
       required: true
   - type: dropdown
