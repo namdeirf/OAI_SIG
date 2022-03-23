@@ -1,7 +1,7 @@
 name: "SIG Create Form"
 description: "Request form to create a SIG under the OAI. Please provide a brief title, description, and fill out the details below and we'll get back to you ASAP."
 title: "[Request to Create SIG]: "
-labels: SIG, invitation-request
+labels: SIG, creationn-request
 assignees:
   - namdeirf
 body:
