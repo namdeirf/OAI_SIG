@@ -13,28 +13,28 @@ body:
     id: contact
     attributes:
       label: Contact Details
-      description: How can we get in touch with you if we need more info?
+      description: Please share the contact details of the main principals of the SIG
     validations:
-      required: false
+      required: true
   - type: textarea
     id: Title
     attributes:
-      label: What till be the title of your SIG
+      label: Give your SIG a unique name, a one or two word descriptor.
       description: Each SIG needs a unique name starting with "SIG-"
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
-      label: Describe your SIG
+      label: Give an overview of your SIG.
       description: A brief description, ideally a single paragraph that describes your SIG.
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
-      label: Statement of Work (SOW 
-      description: A detailed statement of work (SOW) defining what your SIG will accomplish.
+      label: Statement of Work 
+      description: A detailed statement of work (SOW) defining what your SIG will accomplish and the overall scope of the group.
     validations:
       required: true
   - type: dropdown
@@ -58,15 +58,6 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: Versions
-    attributes:
-      label: What versions of the spec do you want your changes to be incorporated in?
-      multiple: true
-      options:
-        - Current
-        - Next
-        - Some future release
-  - type: dropdown
     id: Cadence
     attributes:
       label: How often do you intend to need to meet
@@ -79,6 +70,36 @@ body:
         - Quarterly
         - Annual
         - Ad hoc
+  - type: dropdown
+    id: comunication
+    attributes:
+      label: Teleconference link
+      description: Will you need OpenAPI to provide a teleconference link?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    id: slack
+    attributes:
+      label: Slack
+      description: Would you like us to create a channel on the OAI Slack?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
+  - type: dropdown
+    id: discord
+    attributes:
+      label: discord
+      description: Would you like us to create a channel on the OAI Discord?
+      options:
+        - Yes
+        - No
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:
